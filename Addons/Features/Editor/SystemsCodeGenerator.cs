@@ -1,3 +1,4 @@
+using System.Globalization;
 using System.Linq;
 using System.Reflection;
 using Unity.Collections;
@@ -612,8 +613,8 @@ namespace ME.BECS.Editor.Systems {
                     var val = field.GetValue(system);
                     if (val is double) {
                         result += field.Name + " = " + val.ToString() + "d,\n";
-                    } else if (val is float) {
-                        result += field.Name + " = " + val.ToString() + "f,\n";
+                    } else if (val is float f) {
+                        result += field.Name + " = " + f.ToString(CultureInfo.InvariantCulture) + "f,\n";
                     } else if (val is bool) {
                         result += field.Name + " = " + val.ToString().ToLower() + ",\n";
                     } else if (val is string) {

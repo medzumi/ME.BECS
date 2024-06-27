@@ -1,0 +1,10 @@
+{
+  "name": "ME.BECS.WorldData.Runtime",
+  "rootNamespace": "ME.BECS",
+  "allowUnsafeCode": true,
+  "references": [
+    "ME.BECS",
+    "Unity.Burst",
+    "Unity.Collections"
+  ]
+}

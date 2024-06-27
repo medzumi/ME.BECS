@@ -1,0 +1,9 @@
+{
+  "name": "ME.BECS.EventBus.Runtime",
+  "rootNamespace": "ME.BECS",
+  "references": [
+    "ME.BECS",
+    "ME.BECS.WorldData.Runtime"
+  ],
+  "allowUnsafeCode": true
+}
